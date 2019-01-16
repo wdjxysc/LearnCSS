@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Index</title>
+    <link rel="stylesheet" href="../css/learnlayout.css" />
+</header>
+
+<body>
+    <div>div 是一个标准的块级元素。一个块级元素会新开始一行并且尽可能撑满容器。其他常用的块级元素包括 p 、 form 和HTML5中的新元素： header 、 footer 、 section 等等。</div>
+    <span>span是行内元素</span>
+    <a href="www.baidu.com">a也是行内元素</a>
+
+    <div id="main">设置块级元素的 width 可以防止它从左到右撑满整个容器。然后你就可以设置左右外边距为 auto
+        来使其水平居中。元素会占据你所指定的宽度，然后剩余的宽度会一分为二成为左右外边距。唯一的问题是，当浏览器窗口比元素的宽度还要窄时，浏览器会显示一个水平滚动条来容纳页面。让我们再来改进下这个方案...</div>
+    <br />
+    <div id="main2">设置块级元素的 width 可以防止它从左到右撑满整个容器。然后你就可以设置左右外边距为 auto
+        来使其水平居中。元素会占据你所指定的宽度，然后剩余的宽度会一分为二成为左右外边距。唯一的问题是，当浏览器窗口比元素的宽度还要窄时，浏览器会显示一个水平滚动条来容纳页面。让我们再来改进下这个方案...</div>
+
+    <div class="simple">我小一些...</div>
+    <div class="fancy">我比它大！</div>
+
+
+    <div class="simple1">我们现在一样大小了！</div>
+    <div class="fancy1">万岁！</div>
+
+    <div class="static">static 是默认值。任意 position: static; 的元素不会被特殊的定位。一个 static 元素表示它不会被“positioned”，一个 position
+        属性被设置为其他值的元素表示它会被“positioned”。</div>
+    <br />
+    <div class="relative1">relative 表现的和 static 一样，除非你添加了一些额外的属性。</div>
+    <div class="relative2">在一个相对定位（position属性的值为relative）的元素上设置 top 、 right 、 bottom 和 left
+        属性会使其偏离其正常位置。其他的元素的位置则不会受该元素的影响发生位置改变来弥补它偏离后剩下的空隙。</div>
+
+    <div class="fixed">Hello！暂时不要太关注我哦。令人惊讶地是移动浏览器对 fixed 的支持很差。<a href="http://bradfrostweb.com/blog/mobile/fixed-position/">这里有相应的解决方案</a>.</div>
+
+
+    <div class="relative">
+        这个元素是相对定位的。如果它是 position: static; ，那么它的绝对定位子元素会跳过它直接相对于body元素定位。
+        <div class="absolute">这个元素是绝对定位的。它相对于它的父元素定位。</div>
+    </div>
+
+    <br/>
+
+    <!-- 宛如一个控制台页面 0.0 -->
+    <div>
+        <nav class="nav">
+            <li>Home</li>
+            <li>Taco Menu</li>
+            <li>Draft List</li>
+            <li>Hours</li>
+            <li>Direction</li>
+            <li>Contact</li>
+        </nav>
+
+        <section class="section">section 的 margin-left 样式确保了有足够的空间容纳 nav 元素。</section>
+        <section class="section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</section>
+        <section class="section">注意观察当你调整浏览器窗口时发生了什么。效果很赞！</section>
+        <footer class="footer">如果你使用了一个固定定位的页眉或页脚，确保有足够的空间来显示它们！我在 body 上面加了 margin-bottom 。</footer>
+    </div>
+
+    <!-- 图片float 文字环绕 -->
+    <div>
+        <p>
+            <img src="../images/ilta.png">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.    
+        </p>
+    </div>
+
+    <div class="box">
+        我感觉好像我在漂浮！
+    </div>
+    <div class="no-clear">在这个例子中， section 元素实际上是在 div 之后的（译注：DOM结构上）。然而 div 元素是浮动到左边的，于是 section 中的文字就围绕了 div ，并且 section 元素包围了整个元素。如果我们想让 section 显示在浮动元素之后呢？</div>
+
+    <br/>
+    <div class="after-box">清除了浮动，完全的在浮动div的下面了
+    </div>
+
+    <br/>
+
+    <div class="clearfix">
+        好多了！
+        <img src="../images/ilta.png"/>
+    </div>
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>

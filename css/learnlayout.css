@@ -1,0 +1,153 @@
+#main {
+    width: 600px;
+    margin: 0 auto;
+}
+
+#main2 {
+    max-width: 600px;
+    margin: auto;
+}
+
+.simple {
+    width: 500px;
+    margin: 20px auto;
+    background-color: aqua;
+}
+
+.fancy{
+    width: 500px;
+    margin: 20px auto;
+    padding: 50px;
+    border: solid blanchedalmond 10px;
+    background-color: brown;
+}
+
+.simple1{
+    width: 500px;
+    margin: 20px auto;
+    background-color: aqua;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.fancy1 {
+    width: 500px;
+    margin: 20px auto;
+    padding: 50px;
+    border: solid blanchedalmond 10px;
+    background-color: brown;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 既然没有比这更好的方法，一些CSS开发者想要页面上所有的元素都有如此表现。所以开发者们把以下CSS代码放在他们页面上： */
+/* 
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+} 
+
+*/
+
+
+/* position属性 */
+.static{
+    position: static;
+}
+
+.relative1 {
+    position: relative;
+    padding: 50px;
+    background-color: bisque;
+}
+
+.relative2 {
+    position: relative;
+    top: -20px;
+    left: 20px;
+    background-color: white;
+    width: 500px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    background-color: brown;
+}
+
+
+.relative {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: bisque;
+}
+.absolute {
+    position: absolute;
+    top: 120px;
+    right: 0;
+    width: 300px;
+    height: 200px;
+    background-color: brown;
+}
+
+
+
+.container {
+    position: relative;
+}
+nav {
+    position: absolute;
+    left: 0px;
+    width: 200px;
+}
+section {
+    /* position is static by default */
+    margin-left: 200px;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    background-color: white;
+    width: 100%;
+}
+body {
+    margin-bottom: 120px;
+}
+
+
+img {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+
+.box {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+    background-color: brown;
+}
+
+.no-clear{
+    background-color: bisque;
+}
+
+.after-box{
+    clear: left;
+    background-color: bisque;
+}
+
+.clearfix{
+    overflow: auto;
+    background-color: coral;
+}
